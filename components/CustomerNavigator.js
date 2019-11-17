@@ -5,6 +5,7 @@ import HomeScreen from './CustomerScreens/HomeScreen';
 import DetailsScreen from './CustomerScreens/DetailsScreen'
 import {Text, View} from 'react-native';
 import styles from './styles';
+import InfoElement from './Elements/InfoElement';
 
 class HistoryScreen extends React.Component {
     render() {
@@ -14,7 +15,8 @@ class HistoryScreen extends React.Component {
                     <Text style={styles.headerTitle}>History</Text>
                 </View>
                 <View style={styles.content}>
-                    <Text>Whatever</Text>
+                    <InfoElement title={"History"} info={"Nov 10 - Meeting with Mr. Alex Smith"}/>
+                    <InfoElement info={"Nov 8 - Meeting with Mrs. Samantha Lee"}/>
                 </View>
             </View>
         );

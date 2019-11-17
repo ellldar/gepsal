@@ -1,6 +1,7 @@
 import React from 'react';
 import {Text, View} from 'react-native';
 import styles from '../styles';
+import InfoElement from '../Elements/InfoElement';
 
 export default class DetailsScreen extends React.Component {
   render() {
@@ -10,7 +11,7 @@ export default class DetailsScreen extends React.Component {
                     <Text style={styles.headerTitle}>Details</Text>
                 </View>
                 <View style={styles.content}>
-                    <Text>Whatever</Text>
+                    <InfoElement title={"Upcoming Events"} info={"10:30 Meeting with Mr. Leo Tolstoy "}/>
                 </View>
             </View>
     );
